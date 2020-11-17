@@ -2,8 +2,6 @@ const express = require('express');
 const router = express.Router();
 
 const Plant = require('../models/plant');
-const Comment = require('../models/comment');
-const { populate } = require('../models/plant');
 
 //GET All Plants
 
