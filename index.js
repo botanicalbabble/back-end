@@ -9,6 +9,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 // START CONTROLLERS HERE
+const plantsControllers = require('./controllers/plants');
+
+app.use('/api/plants', plantsControllers);
 
 // END CONTROLLERS HERE
 
