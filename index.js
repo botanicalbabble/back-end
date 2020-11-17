@@ -13,6 +13,10 @@ const plantsControllers = require('./controllers/plants');
 
 app.use('/api/plants', plantsControllers);
 
+const commentsControllers = require('./controllers/comments');
+
+app.use('/api/comments', commentsControllers);
+
 // END CONTROLLERS HERE
 
 // setting the local port, or use the default 8000
