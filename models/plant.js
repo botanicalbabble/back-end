@@ -1,4 +1,6 @@
-const mongoose = require('../db/connection')
+const mongoose = require('../db/connection');
+
+const commentSchema = require('./comment');
 
 const PlantSchema = new mongoose.Schema(
 	{
@@ -27,14 +29,14 @@ const PlantSchema = new mongoose.Schema(
 			plant: String,
 			genus: String,
 		},
-		// comments: [commentSchema]
+		comments: [commentSchema],
 	},
 
 	{
 		timestamps: true,
 	}
-)
+);
 
-const Plant = mongoose.model('Plant', PlantSchema)
+const Plant = mongoose.model('Plant', PlantSchema);
 
-module.exports = Plant
+module.exports = Plant;
