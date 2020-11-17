@@ -2,7 +2,7 @@ const mongoose = require('../db/connection');
 
 const commentSchema = new mongoose.Schema(
 	{
-		name: {
+		comment_name: {
 			type: String,
 			required: true,
 		},
