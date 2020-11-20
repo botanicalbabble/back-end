@@ -9,10 +9,6 @@ const PlantSchema = new mongoose.Schema(
 			type: String,
 			required: true,
 		},
-		slug: {
-			type: String,
-			required: true,
-		},
 		scientific_name: String,
 		year: Number,
 		bibliography: String,
